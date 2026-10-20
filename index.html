@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>TRADING MASTERMIND — Official VIP Telegram Channel</title>
+    <meta name="description"
+        content="Join TRADING MASTERMIND on Telegram. 50,315+ Subscribers. Stability | Consistency | Transparency. NIFTY, BANKNIFTY, SENSEX, HERO/ZERO, STOCK OPTIONS. 0% Luck, 100% Skills." />
+    <meta name="theme-color" content="#060607" />
+
+    <!-- Premium Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --gold-primary: #f2cb63;
+            --gold-bright: #ffe699;
+            --gold-dark: #9f751f;
+            --gold-glow: rgba(242, 203, 99, 0.28);
+            --bg-obsidian: #060608;
+            --card-bg: linear-gradient(180deg, rgba(22, 19, 14, 0.96) 0%, rgba(12, 11, 9, 0.98) 100%);
+            --card-border: rgba(242, 203, 99, 0.24);
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            min-height: 100dvh;
+            overflow-x: hidden;
+            background-color: var(--bg-obsidian);
+            color: #f7edd4;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Ambient Hero Stage */
+        .page {
+            position: relative;
+            min-height: 100dvh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(242, 203, 99, 0.16) 0%, transparent 45%),
+                radial-gradient(circle at 10% 90%, rgba(175, 128, 30, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 90% 85%, rgba(242, 203, 99, 0.10) 0%, transparent 42%),
+                radial-gradient(ellipse at 50% 50%, rgba(14, 12, 9, 0.9) 0%, #050507 100%);
+        }
+
+        /* Fine Technical Grid */
+        .cyber-grid {
+            position: absolute;
+            inset: 0;
+            opacity: 0.22;
+            background-image:
+                linear-gradient(rgba(242, 203, 99, 0.12) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(242, 203, 99, 0.12) 1px, transparent 1px);
+            background-size: 38px 38px;
+            pointer-events: none;
+            mask-image: radial-gradient(ellipse at center, #000 35%, transparent 75%);
+            -webkit-mask-image: radial-gradient(ellipse at center, #000 35%, transparent 75%);
+        }
+
+        /* Ambient Animated Golden Nebulas */
+        .nebula {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(70px);
+            pointer-events: none;
+            opacity: 0.45;
+            animation: nebulaFloat 12s ease-in-out infinite alternate;
+        }
+
+        .nebula-1 {
+            width: 380px;
+            height: 380px;
+            background: radial-gradient(circle, #b8860b 0%, transparent 70%);
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nebula-2 {
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, #93630f 0%, transparent 70%);
+            bottom: -50px;
+            right: 5%;
+            animation-delay: -6s;
+        }
+
+        @keyframes nebulaFloat {
+            0% { transform: translate(-50%, 0) scale(1); }
+            100% { transform: translate(-48%, 24px) scale(1.12); }
+        }
+
+        /* Holographic Radar Rings */
+        .radar-sphere {
+            position: absolute;
+            width: 580px;
+            height: 580px;
+            border-radius: 50%;
+            border: 1px dashed rgba(242, 203, 99, 0.16);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            box-shadow: 0 0 90px rgba(212, 175, 55, 0.06);
+            animation: radarRotate 40s linear infinite;
+        }
+
+        .radar-sphere::before {
+            content: '';
+            position: absolute;
+            inset: 18%;
+            border-radius: 50%;
+            border: 1px solid rgba(242, 203, 99, 0.10);
+        }
+
+        .radar-sphere::after {
+            content: '';
+            position: absolute;
+            inset: 38%;
+            border-radius: 50%;
+            border: 1px dotted rgba(242, 203, 99, 0.18);
+        }
+
+        @keyframes radarRotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        /* Sleek Corner HUD Metadata */
+        .hud-corner {
+            position: absolute;
+            z-index: 4;
+            font-family: 'Outfit', sans-serif;
+            font-size: 10.5px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #a39577;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            pointer-events: none;
+        }
+
+        .hud-corner strong {
+            color: var(--gold-primary);
+            text-shadow: 0 0 10px rgba(242, 203, 99, 0.4);
+        }
+
+        .hud-corner i {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--gold-primary);
+            box-shadow: 0 0 6px var(--gold-primary);
+        }
+
+        /* Center Luxury Obsidian Glass Card */
+        .card {
+            position: relative;
+            z-index: 5;
+            width: min(540px, calc(100vw - 28px));
+            max-height: calc(100dvh - 50px);
+            padding: clamp(26px, 3.8vh, 38px) clamp(22px, 4vw, 42px);
+            border-radius: 32px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            box-shadow:
+                0 35px 85px rgba(0, 0, 0, 0.85),
+                0 0 45px rgba(212, 175, 55, 0.10),
+                inset 0 1px 1px rgba(255, 240, 190, 0.35),
+                inset 0 -1px 1px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+            text-align: center;
+            animation: cardEnter 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        @keyframes cardEnter {
+            from {
+                opacity: 0;
+                transform: translateY(24px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Live Verified Badge */
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 7px 16px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, rgba(242, 203, 99, 0.12) 0%, rgba(242, 203, 99, 0.05) 100%);
+            border: 1px solid rgba(242, 203, 99, 0.32);
+            color: var(--gold-bright);
+            font-family: 'Outfit', sans-serif;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        }
+
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #00e676;
+            box-shadow: 0 0 0 3px rgba(0, 230, 118, 0.25), 0 0 12px #00e676;
+            animation: livePulse 1.8s infinite;
+        }
+
+        @keyframes livePulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.25); opacity: 0.75; }
+        }
+
+        /* Luxury Avatar Container with Dual Gold Rings */
+        .avatar-wrap {
+            position: relative;
+            width: 104px;
+            height: 104px;
+            margin: 18px auto 14px;
+        }
+
+        .avatar-halo {
+            position: absolute;
+            inset: -5px;
+            border-radius: 50%;
+            background: conic-gradient(from 180deg, #c59325, #fff0a8, #93630f, #ffd86b, #c59325);
+            padding: 3px;
+            box-shadow: 0 14px 38px rgba(212, 175, 55, 0.35);
+            animation: ringGlow 8s linear infinite;
+        }
+
+        @keyframes ringGlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .avatar-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3.5px solid #14110d;
+            background: #08080a;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Verified Floating Checkmark */
+        .verified-badge {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f5d77f, #b38321);
+            border: 2px solid #0e0c09;
+            box-shadow: 0 4px 12px rgba(242, 203, 99, 0.5);
+            display: grid;
+            place-items: center;
+        }
+
+        .verified-badge svg {
+            width: 14px;
+            height: 14px;
+            fill: #0c0a06;
+        }
+
+        /* Master Heading */
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(28px, 4.4vw, 38px);
+            font-weight: 900;
+            line-height: 1.05;
+            letter-spacing: -0.025em;
+            color: #ffffff;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        h1 .gold-word {
+            background: linear-gradient(135deg, #fff7dc 0%, #f4d375 40%, #c99324 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(242, 203, 99, 0.3);
+        }
+
+        /* Subscriber Metric */
+        .subs-wrap {
+            margin-top: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #c9bc9e;
+            letter-spacing: 0.05em;
+        }
+
+        .subs-wrap b {
+            color: #ffffff;
+            font-weight: 800;
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+        }
+
+        /* 3 Core Pillars Box: Stability | Consistency | Transparency */
+        .pillars-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .pillar-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 13px;
+            border-radius: 12px;
+            background: rgba(242, 203, 99, 0.07);
+            border: 1px solid rgba(242, 203, 99, 0.22);
+            color: #faebd0;
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            transition: all 0.25s ease;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(242, 203, 99, 0.45);
+            background: rgba(242, 203, 99, 0.12);
+            box-shadow: 0 6px 16px rgba(242, 203, 99, 0.14);
+        }
+
+        .pillar-icon {
+            font-size: 13px;
+        }
+
+        /* Segment Badges: NIFTY, BANKNIFTY, SENSEX, HERO/ZERO, STOCK OPTION */
+        .segments-container {
+            margin-top: 15px;
+            padding: 14px 12px;
+            border-radius: 20px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border: 1px solid rgba(242, 203, 99, 0.18);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        .segments-label {
+            font-family: 'Outfit', sans-serif;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            color: #9f9172;
+            text-transform: uppercase;
+            margin-bottom: 9px;
+        }
+
+        .segments-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .segment-chip {
+            padding: 5px 11px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(242, 203, 99, 0.25);
+            color: #ffe8a8;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+        }
+
+        .segment-chip:hover {
+            border-color: #ffd86b;
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(242, 203, 99, 0.25);
+        }
+
+        /* Gold Diamond Highlight Badge: 0% LUCK • 100% SKILLS */
+        .skill-highlight-bar {
+            margin-top: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 9px 18px;
+            border-radius: 14px;
+            background: linear-gradient(90deg, rgba(197, 147, 37, 0.2) 0%, rgba(255, 230, 153, 0.25) 50%, rgba(197, 147, 37, 0.2) 100%);
+            border: 1px solid rgba(255, 222, 128, 0.45);
+            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
+
+        .skill-highlight-bar span {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12.5px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #fff9e6;
+            text-shadow: 0 0 12px rgba(242, 203, 99, 0.5);
+        }
+
+        /* Ultimate 24K Liquid Gold CTA Button */
+        .cta-btn {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-height: 58px;
+            margin-top: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border-radius: 18px;
+            background: linear-gradient(95deg, #a4761a 0%, #e8be56 36%, #fff0a8 55%, #dfb142 80%, #9c6e14 100%);
+            color: #0b0905;
+            text-decoration: none;
+            box-shadow:
+                0 18px 42px rgba(212, 175, 55, 0.32),
+                0 4px 12px rgba(0, 0, 0, 0.5),
+                inset 0 1px 1px rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2.5px) scale(1.008);
+            box-shadow:
+                0 22px 50px rgba(212, 175, 55, 0.45),
+                0 6px 16px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-btn:active {
+            transform: scale(0.985);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.28);
+        }
+
+        /* Shimmer Sheen Light across Button */
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.75) 50%, transparent 80%);
+            transform: skewX(-25deg);
+            animation: btnShimmer 3.8s infinite;
+        }
+
+        @keyframes btnShimmer {
+            0%, 20% { left: -100%; }
+            55%, 100% { left: 160%; }
+        }
+
+        .cta-icon-wrap {
+            display: grid;
+            place-items: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #0b0905;
+            color: #f7d57f;
+        }
+
+        .cta-icon-wrap svg {
+            width: 16px;
+            height: 16px;
+            fill: #f7d57f;
+            transform: translateX(-1px);
+        }
+
+        .cta-text-group {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.15;
+        }
+
+        .cta-text-group .main-action {
+            font-family: 'Outfit', sans-serif;
+            font-size: 16.5px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #0b0905;
+        }
+
+        .cta-text-group .sub-action {
+            font-size: 10.5px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            color: #3b2d0c;
+            text-transform: uppercase;
+        }
+
+        .cta-arrow {
+            font-size: 18px;
+            font-weight: 900;
+            margin-left: 2px;
+            transition: transform 0.2s ease;
+        }
+
+        .cta-btn:hover .cta-arrow {
+            transform: translateX(3px);
+        }
+
+        /* Micro Trust & Security Badges */
+        .trust-strip {
+            margin-top: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #9f9172;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .trust-item i {
+            color: var(--gold-primary);
+            font-style: normal;
+        }
+
+        /* Legal Disclaimer */
+        .disclaimer {
+            margin-top: 15px;
+            padding-top: 12px;
+            border-top: 1px solid rgba(242, 203, 99, 0.14);
+            color: #8c8066;
+            font-size: 10.5px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .disclaimer strong {
+            color: #b5a686;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 640px) {
+            .page {
+                padding: 14px 10px;
+            }
+
+            .hud-corner.top-right,
+            .hud-corner.bottom-left {
+                display: none;
+            }
+
+            .hud-corner.top-left {
+                left: 14px !important;
+                top: 14px !important;
+            }
+
+            .hud-corner.bottom-right {
+                right: 14px !important;
+                bottom: 12px !important;
+            }
+
+            .card {
+                width: calc(100vw - 18px);
+                border-radius: 26px;
+                padding: 22px 16px 20px;
+                max-height: calc(100dvh - 60px);
+            }
+
+            .avatar-wrap {
+                width: 86px;
+                height: 86px;
+                margin: 12px auto 10px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .pillars-row {
+                gap: 5px;
+                margin-top: 14px;
+            }
+
+            .pillar-card {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+
+            .segments-container {
+                margin-top: 12px;
+                padding: 10px 8px;
+            }
+
+            .segment-chip {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+
+            .cta-btn {
+                min-height: 52px;
+                margin-top: 16px;
+            }
+
+            .cta-text-group .main-action {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-height: 720px) {
+            .card {
+                padding: 18px 16px 16px;
+            }
+
+            .avatar-wrap {
+                width: 72px;
+                height: 72px;
+                margin: 8px auto 8px;
+            }
+
+            .pillars-row {
+                margin-top: 10px;
+            }
+
+            .segments-container {
+                margin-top: 10px;
+                padding: 8px 6px;
+            }
+
+            .skill-highlight-bar {
+                margin-top: 8px;
+                padding: 6px 14px;
+            }
+
+            .cta-btn {
+                min-height: 48px;
+                margin-top: 12px;
+            }
+
+            .disclaimer {
+                margin-top: 10px;
+                padding-top: 8px;
+                font-size: 9.5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <!-- Ambient Stage Elements -->
+        <div class="cyber-grid" aria-hidden="true"></div>
+        <div class="nebula nebula-1" aria-hidden="true"></div>
+        <div class="nebula nebula-2" aria-hidden="true"></div>
+        <div class="radar-sphere" aria-hidden="true"></div>
+
+        <!-- HUD Corner Coordinates -->
+        <div class="hud-corner top-left" style="left: 3.5vw; top: 22px;">
+            <i></i> <strong>TRADING</strong> / MASTERMIND
+        </div>
+        <div class="hud-corner top-right" style="right: 3.5vw; top: 22px;">
+            <i></i> VIP ALGO &amp; SIGNALS
+        </div>
+        <div class="hud-corner bottom-left" style="left: 3.5vw; bottom: 22px;">
+            <i></i> PRICE ACTION &bull; SETUP &bull; ACCURACY
+        </div>
+        <div class="hud-corner bottom-right" style="right: 3.5vw; bottom: 22px;">
+            <i></i> <strong>50 315</strong> SUBSCRIBERS
+        </div>
+
+        <!-- Center Obsidian Card -->
+        <section class="card" aria-label="Trading Mastermind Channel Details">
+
+            <!-- Verified Status Badge -->
+            <div class="live-badge">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span>OFFICIAL TELEGRAM COMMUNITY</span>
+            </div>
+
+            <!-- Avatar with Dynamic Gold Conic Halo -->
+            <div class="avatar-wrap">
+                <div class="avatar-halo" aria-hidden="true"></div>
+                <div class="avatar-inner">
+                    <img src="logo.jpg" class="avatar" alt="TRADING MASTERMIND Official Logo"
+                        onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(145deg,#9d7420,#f5d77f)';" />
+                </div>
+                <div class="verified-badge" title="NISM Certified &amp; Verified">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Headline -->
+            <h1>TRADING <span class="gold-word">MASTERMIND</span></h1>
+
+            <!-- Subscriber Metric -->
+            <div class="subs-wrap">
+                <span>COMMUNITY:</span>
+                <b>50 315 SUBSCRIBERS</b>
+            </div>
+
+            <!-- The 3 Pillars of Excellence -->
+            <div class="pillars-row" aria-label="Core Values">
+                <div class="pillar-card">
+                    <span class="pillar-icon">💎</span>
+                    <span>Stability</span>
+                </div>
+                <div class="pillar-card">
+                    <span class="pillar-icon">📈</span>
+                    <span>Consistency</span>
+                </div>
+                <div class="pillar-card">
+                    <span class="pillar-icon">💯</span>
+                    <span>Transparency</span>
+                </div>
+            </div>
+
+            <!-- Market Segments Grid -->
+            <div class="segments-container" aria-label="Trading Segments">
+                <div class="segments-label">ACTIVE MARKET SEGMENTS</div>
+                <div class="segments-wrap">
+                    <span class="segment-chip">NIFTY</span>
+                    <span class="segment-chip">BANKNIFTY</span>
+                    <span class="segment-chip">SENSEX</span>
+                    <span class="segment-chip">HERO / ZERO</span>
+                    <span class="segment-chip">STOCK OPTION</span>
+                </div>
+            </div>
+
+            <!-- Skill Claim Highlight Badge -->
+            <div class="skill-highlight-bar" aria-label="Philosophy">
+                <span class="star-icon">&#10024;</span>
+                <span>0% LUCK &bull; 100% SKILLS</span>
+                <span class="star-icon">&#10024;</span>
+            </div>
+
+            <!-- 24K Liquid Gold Action Button -->
+            <a href="https://t.me/+m5FayHEvzFo3OWQ1" target="_blank" rel="noopener noreferrer" class="cta-btn" id="joinTelegramCta">
+                <div class="cta-icon-wrap" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .36z"/>
+                    </svg>
+                </div>
+                <div class="cta-text-group">
+                    <span class="main-action">JOIN CHANNEL</span>
+                    <span class="sub-action">Free Instant Telegram Access</span>
+                </div>
+                <span class="cta-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+
+            <!-- Micro Trust Badges -->
+            <div class="trust-strip">
+                <span class="trust-item"><i>&#10003;</i> Real-Time Setups</span>
+                <span class="trust-item"><i>&#10003;</i> NISM Certified Insights</span>
+                <span class="trust-item"><i>&#10003;</i> 1-Tap Access</span>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> Trading in financial markets involves substantial risk of loss. All information and analyses shared in the channel are strictly for educational purposes and do not constitute financial advice. Review independently before taking trading positions.
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
