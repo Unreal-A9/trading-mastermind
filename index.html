@@ -12,10 +12,14 @@
     <!-- Premium Google Fonts: Plus Jakarta Sans & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <style>
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -31,7 +35,8 @@
             --card-border: rgba(242, 203, 99, 0.24);
         }
 
-        html, body {
+        html,
+        body {
             width: 100%;
             height: 100%;
             min-height: 100dvh;
@@ -103,8 +108,13 @@
         }
 
         @keyframes nebulaFloat {
-            0% { transform: translate(-50%, 0) scale(1); }
-            100% { transform: translate(-48%, 24px) scale(1.12); }
+            0% {
+                transform: translate(-50%, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(-48%, 24px) scale(1.12);
+            }
         }
 
         /* Holographic Radar Rings */
@@ -139,8 +149,13 @@
         }
 
         @keyframes radarRotate {
-            from { transform: translate(-50%, -50%) rotate(0deg); }
-            to { transform: translate(-50%, -50%) rotate(360deg); }
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
         }
 
         /* Sleek Corner HUD Metadata */
@@ -199,6 +214,7 @@
                 opacity: 0;
                 transform: translateY(24px) scale(0.96);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -233,8 +249,17 @@
         }
 
         @keyframes livePulse {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.25); opacity: 0.75; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.25);
+                opacity: 0.75;
+            }
         }
 
         /* Luxury Avatar Container with Dual Gold Rings */
@@ -256,8 +281,13 @@
         }
 
         @keyframes ringGlow {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .avatar-inner {
@@ -499,8 +529,16 @@
         }
 
         @keyframes btnShimmer {
-            0%, 20% { left: -100%; }
-            55%, 100% { left: 160%; }
+
+            0%,
+            20% {
+                left: -100%;
+            }
+
+            55%,
+            100% {
+                left: 160%;
+            }
         }
 
         .cta-icon-wrap {
@@ -699,6 +737,27 @@
             }
         }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1073763239040943');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1073763239040943&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+
 </head>
 
 <body>
@@ -741,7 +800,7 @@
                 </div>
                 <div class="verified-badge" title="NISM Certified &amp; Verified">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
                     </svg>
                 </div>
             </div>
@@ -791,10 +850,12 @@
             </div>
 
             <!-- 24K Liquid Gold Action Button -->
-            <a href="https://t.me/+m5FayHEvzFo3OWQ1" target="_blank" rel="noopener noreferrer" class="cta-btn" id="joinTelegramCta">
+            <a href="https://t.me/+m5FayHEvzFo3OWQ1" target="_blank" rel="noopener noreferrer" class="cta-btn"
+                id="joinTelegramCta">
                 <div class="cta-icon-wrap" aria-hidden="true">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .36z"/>
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .36z" />
                     </svg>
                 </div>
                 <div class="cta-text-group">
@@ -813,7 +874,9 @@
 
             <!-- Disclaimer -->
             <div class="disclaimer">
-                <strong>Disclaimer:</strong> Trading in financial markets involves substantial risk of loss. All information and analyses shared in the channel are strictly for educational purposes and do not constitute financial advice. Review independently before taking trading positions.
+                <strong>Disclaimer:</strong> Trading in financial markets involves substantial risk of loss. All
+                information and analyses shared in the channel are strictly for educational purposes and do not
+                constitute financial advice. Review independently before taking trading positions.
             </div>
 
         </section>
